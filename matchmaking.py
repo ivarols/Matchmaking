@@ -1,4 +1,3 @@
-# dim(student_score) == dim(employer_scores^T)
 
 score_matrix1 = [[1, 1, 1, 1, 1],
                  [1, 1, 1, 1, 1],
@@ -89,7 +88,7 @@ if len(score_matrix2) <= len(score_matrix1):
         current_highest_score = 0
 
     for final_match in final_matches:
-        print(f'The best match for employer: {matches1[final_match][1]}, is student: {matches1[final_match][0]}')
+        print(f'The best match for person : {matches1[final_match][1]} from matrix 2, is person: {matches1[final_match][0]} from matrix 1')
 
 else:
     coords_of_equals = []
@@ -120,6 +119,6 @@ else:
         current_highest_score = 0
 
     for match in matches2:
-        print(f'The best match for student: {match[0]}, is employer: {match[1]}')
+        print(f'The best match for person: {match[0]} from matrix 1, is person: {match[1]} from matrix 2')
 
 
